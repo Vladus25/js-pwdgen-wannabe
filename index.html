@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Js Esercizio</title>
+    <style media="screen">
+
+      body{
+        background-color: rgb(209, 136, 100);
+      }
+      .contenitore{
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 class="contenitore" id="dati-utente"></h1>
+    <h1 class="contenitore" id="nome-utente"></h1>
+    <h1 class="contenitore" id="cognome-utente"></h1>
+    <h1 class="contenitore" id="eta-utente"></h1>
+    <h1 class="contenitore" id="colore-utente"></h1>
+
+    <script type="text/javascript">
+
+      var nome = prompt("Digita il tuo nome:");
+      var cognome = prompt("Digita il tuo cognome:");
+      var colore = prompt("Digita il tuo colore preferito:");
+      var eta = prompt("Digita la tua età:");
+
+      console.log("Nome del utente: " + nome, "; Cognome del utente: " + cognome, "; Eta del utente: " + eta, "; Colore preferito del utente: " + colore);
+      document.getElementById('dati-utente').innerHTML = (nome + cognome + colore + eta);
+      document.getElementById('nome-utente').innerHTML = ("Nome: " + nome);
+      document.getElementById('cognome-utente').innerHTML = ("Cognome: " + cognome);
+      document.getElementById('eta-utente').innerHTML = ("Età: " + eta);
+      document.getElementById('colore-utente').innerHTML = ("Colore preferito: " + colore);
+
+    </script>
+
+  </body>
+</html>
